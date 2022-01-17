@@ -1,0 +1,48 @@
+set relativenumber
+set cursorline
+
+" leader is now space
+let mapleader='<space>'
+
+"------------
+" Movements |
+"------------
+noremap J 5j
+noremap K 5k
+
+noremap L $
+noremap H ^
+vnoremap L $
+vnoremap H ^
+
+"-------------
+" Operations |
+"-------------
+inoremap jk <ESC>
+"vnoremap <tab> <ESC>
+
+nnoremap ; :
+nnoremap ' "
+
+" save and quit
+noremap <C-s> :w<CR>
+noremap Q :q<CR>
+noremap <C-q> :q<CR>
+
+" indentation
+nnoremap < <<
+nnoremap > >>
+
+" window
+noremap <leader><leader>l :vsplit<CR>
+noremap <leader><leader>h :vsplit<CR>
+noremap <leader><leader>k :split<CR>
+noremap <leader><leader>j :split<CR>
+
+noremap <M-L> <C-w>l
+noremap <M-H> <C-w>h
+noremap <M-J> <C-w>j
+noremap <M-K> <C-w>k
+
+nnoremap <leader>f :Neovintageous action=toggle_side_bar<CR>
+nnoremap " :reg<CR>
